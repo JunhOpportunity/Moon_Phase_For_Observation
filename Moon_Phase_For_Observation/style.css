@@ -81,6 +81,7 @@ h1 {
 
 /* NavBar */
 #navbar {
+    z-index: 1; /* 없으면 문제 발생. */
     width: 100%;
     border-radius: 2rem;
     position: fixed;
@@ -130,17 +131,18 @@ h1 {
 }
 
 .moonCard {
-    box-shadow: 10px 10px 3px var(--color-real-gray);
+    /* box-shadow: 10px 10px 3px var(--color-real-gray); */
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 250px;
     height: 400px;
     margin: 10px;
     background-color: var(--color-white);
 }
 
 .moonCard:hover {
+    box-shadow: 20px 20px 3px var(--color-real-gray);
     transform: scale(1.1);
     opacity: 1;
     transition: all var(--animation-duration) ease-out;
@@ -163,14 +165,14 @@ h1 {
     border: 1px solid var(--color-gray);
     height: 1000px;
     padding-top: 0;
-    margin: 0 40px;
+    margin: 50px auto;
 }
 
 #developerPictures .pictures .picture {
     float: left; /* 이걸로 하면 해결될 줄 알았는데 왜 안될까..??*/
 }
 
-#developerPictures h3::after {
+#developerPictures h3:after {
     content: "";
     position: relative;
     top: 10px;
@@ -190,6 +192,11 @@ h1 {
     height: 400px;
     margin: 5px;
     
+}
+
+.picture img:hover {
+    transform: scale(1.3);
+    transition: all var(--animation-duration) ease-out;
 }
 
 /* Contact */

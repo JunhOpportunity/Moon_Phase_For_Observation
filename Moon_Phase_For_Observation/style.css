@@ -214,4 +214,30 @@ h1 {
     color: var(--color-dark-gray);
 }
 
-/* Hover */
+/* Mobile */
+@media screen and (max-width: 768px) {
+    #moonCards {
+        flex-direction: column;
+        
+    }
+
+    .moonCard {
+        margin: 20px auto;
+    }
+
+    #developerPictures {
+        margin-left: 50px;
+        margin-right: 40px;
+        overflow-y: auto;
+    }
+
+
+    #developerPictures .pictures{
+        flex-direction: column;
+    }
+
+    #developerPictures .pictures img{
+        transform: none;
+    
+    }
+}

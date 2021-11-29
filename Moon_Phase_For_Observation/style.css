@@ -159,6 +159,15 @@ h1 {
     margin-left: auto;
 }
 
+/* Full Moon Days */
+/* 다시 수정.  세세하게 */
+#nextFullMoon {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 250px;
+    height: 400px;
+} 
 
 /* Developer Pictuers Setting */
 #developerPictures {
@@ -241,6 +250,10 @@ h1 {
     
     }
 }
+
+/* #contact:hover {
+    color: var(--color-yellow)
+} */
 
 /* Up Button */
 .arrow-up {

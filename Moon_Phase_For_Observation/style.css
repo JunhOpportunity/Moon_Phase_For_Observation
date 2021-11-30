@@ -162,12 +162,27 @@ h1 {
 /* Full Moon Days */
 /* 다시 수정.  세세하게 */
 #nextFullMoon {
-    margin-left: auto;
-    margin-right: auto;
+
+    text-align: center;
+
+} 
+
+#nextFullMoon .fullMoon {
     text-align: center;
     width: 250px;
     height: 400px;
-} 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nextFullMoon .fullMoon__quiz button{
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+    border: 1px solid var(--color-deep-gray);
+    background-color: var(--color-deep-gray);
+    color: var(--color-white);
+}
 
 /* Developer Pictuers Setting */
 #developerPictures {

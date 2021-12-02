@@ -196,10 +196,12 @@ h1 {
     height: 1000px;
     padding-top: 0;
     margin: 50px auto;
+    position: relative;
 }
 
 #developerPictures .pictures .picture {
-    float: left; /* 이걸로 하면 해결될 줄 알았는데 왜 안될까..??*/
+    /*float: left; 이걸로 하면 해결될 줄 알았는데 왜 안될까..??*/
+    /* justify-content: space-between; */
 }
 
 #developerPictures h3:after {
@@ -211,6 +213,24 @@ h1 {
     height: 1px;
     background-color: var(--color-light-gray);
 }
+#developerPictures h3{
+    margin-top: 0px;
+    padding-top: 10px;
+}
+
+#developerPictures .info {
+    display: block;
+    position: sticky;
+    height: 45px;
+    background-color: var(--color-white);
+    top: 0;
+}
+/* #developerPictures h3 {
+    background-color: var(--color-white);
+    display: block;
+    position: sticky;
+    top: 0;
+} */
 
 .pictures {
     display: flex;
@@ -254,12 +274,22 @@ h1 {
 
     .moonCard {
         margin: 20px auto;
+        border-radius: 50px;
+    }
+
+    .fullMoon {
+        border-radius: 50px;
     }
 
     #developerPictures {
         margin-left: 50px;
         margin-right: 40px;
         overflow-y: auto;
+        border-radius: 50px;
+    }
+
+    #developerPictures::-webkit-scrollbar {
+        display: none;
     }
 
 
@@ -269,8 +299,9 @@ h1 {
 
     #developerPictures .pictures img{
         transform: none;
-    
+        border-radius: 10px;
     }
+
 }
 
 /* #contact:hover {
@@ -278,7 +309,7 @@ h1 {
 } */
 
 /* Up Button */
-.arrow-up {
+/* .arrow-up {
     position: fixed;
     bottom: 40px;
     right: 40px;
@@ -289,4 +320,4 @@ h1 {
     border-radius: 50%;
     font-size: 30px;
     
-}
+} */

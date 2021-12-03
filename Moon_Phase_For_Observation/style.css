@@ -197,11 +197,13 @@ h1 {
     padding-top: 0;
     margin: 50px auto;
     position: relative;
+    overflow-y: auto;
+
 }
 
-#developerPictures .pictures .picture {
+#developerPictures .pictures {
     /*float: left; 이걸로 하면 해결될 줄 알았는데 왜 안될까..??*/
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
 
 #developerPictures h3:after {
@@ -234,7 +236,9 @@ h1 {
 
 .pictures {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    /* display: flex;
+    justify-content: center; */
 }
 
 .picture img {

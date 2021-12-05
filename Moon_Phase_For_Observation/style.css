@@ -30,7 +30,7 @@
     --border-radius: 10%;
 
     /* Animation */
-    --animation-duration: 300ms;
+    --animation-duration: 400ms;
 
 
 
@@ -83,6 +83,8 @@ h1 {
 #navbar {
     z-index: 1; /* 없으면 문제 발생. */
     width: 100%;
+    left: 0;
+    right: 0;
     border-radius: 2rem;
     position: fixed;
     background-color: var(--color-gray);
@@ -188,6 +190,7 @@ h1 {
     transform: rotate(-30deg) scale(1.2);
     transition: all var(--animation-duration) ease-out;
     background-color: var(--color-real-gray);
+    cursor: pointer;
 }
 
 /* Developer Pictuers Setting */

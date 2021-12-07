@@ -134,9 +134,10 @@ h1 {
 
 .moonCard {
     /* box-shadow: 10px 10px 3px var(--color-real-gray); */
-    text-align: center;
+    display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     width: 250px;
     height: 400px;
     margin: 10px;
@@ -144,25 +145,21 @@ h1 {
 }
 
 .moonCard:hover {
-    box-shadow: 20px 20px 3px var(--color-real-gray);
+    box-shadow: 15px 15px 3px var(--color-real-gray);
     transform: scale(1.1);
     opacity: 1;
     transition: all var(--animation-duration) ease-out;
 }
 
-.moonCard:hover .moonCard__info{
-    opacity: 0.8;
-    transform: translateY(0px);
-}
-
-/* .moonCard .moonCard__img img:hover {
-    transform: scale(1.1);
+/* moon card에 hover 되었을 때 검은색이 깔리는데,  이때 사진은 가려지지 않도록 하는 방법이 있을까?? */
+/* .moonCard .moonCard__img img {
+    z-index: 1;
 } */
 
 .moonCard__info {
     background-color: var(--color-black);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     opacity: 0;
     top: 0;
@@ -170,10 +167,17 @@ h1 {
     width: 100%;
     height: 100%;
     position: absolute;
-    margin-right: auto;
-    margin-left: auto;
-    transform: translateY(10px); /* 아래서 위로 올라오는 효과 */
+    /* transform: translateY(0px); 아래서 위로 올라오는 효과 */
     transition: all var(--animation-duration) ease-in;
+}
+.moonCard:hover .moonCard__info{
+    opacity: 0.8;
+    transform: translateY(0px);
+}
+
+
+.moonCard__info h3 {
+    color: var(--color-white);
 }
 
 /* Full Moon Days */

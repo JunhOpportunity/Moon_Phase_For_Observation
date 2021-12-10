@@ -93,6 +93,13 @@ h1 {
     padding: 10px 0px;
 }
 
+.nav_language {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    
+}
+
 .nav__logo {  
     font-size: var(--font-medium);
     color: var(--color-yellow);
@@ -122,6 +129,37 @@ h1 {
     background-color: var(--color-gray);
 }
 
+/* Today Observe the Moon? */
+#todayMoonQuiz {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+
+}
+
+#todayMoonQuiz .todayMoon {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 10px;
+    text-align: center;
+    height: 150px;
+}
+
+#todayMoonQuiz .todayMoon .todayMoon_btn button{
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+    border: 1px solid var(--color-deep-gray);
+    background-color: var(--color-deep-gray);
+    color: var(--color-white);
+}
+
+#todayMoonQuiz .todayMoon .todayMoon_btn button:hover {
+    transform: rotate(-30deg) scale(1.2);
+    transition: all var(--animation-duration) ease-out;
+    background-color: var(--color-real-gray);
+    cursor: pointer;
+}
 
 /* Moon Cards */
 #moonCards {
@@ -191,25 +229,9 @@ h1 {
 #nextFullMoon .fullMoon {
     text-align: center;
     width: 250px;
-    height: 400px;
+    height: 250px;
     margin-left: auto;
     margin-right: auto;
-}
-
-#nextFullMoon .fullMoon__quiz button{
-    border-radius: 50%;
-    width:50px;
-    height:50px;
-    border: 1px solid var(--color-deep-gray);
-    background-color: var(--color-deep-gray);
-    color: var(--color-white);
-}
-
-#nextFullMoon .fullMoon__quiz button:hover {
-    transform: rotate(-30deg) scale(1.2);
-    transition: all var(--animation-duration) ease-out;
-    background-color: var(--color-real-gray);
-    cursor: pointer;
 }
 
 /* Developer Pictuers Setting */
@@ -320,6 +342,11 @@ h1 {
 
 /* Mobile */
 @media screen and (max-width: 768px) {
+    
+    .todayMoon {
+        border-radius: 45px;
+    }
+
     #moonCards {
         flex-direction: column;
         

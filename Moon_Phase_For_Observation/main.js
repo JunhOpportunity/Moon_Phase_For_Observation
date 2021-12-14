@@ -1,28 +1,8 @@
-// const btn = document.querySelector('.blackVer');
-// btn.addEventListener('click', () => {
-//     body.style.Color = 'black';
-// // })
-// function bgchange () {
-//     document.body.style.backgroundColor = "tomato";
-// }
-// btn.addEventListener("click", bgchange);
+const bgc = document.querySelector('body');
 
-// const do_not_right_click = document.querySelector('img');
-// function right_click() {
-//   alert("무단 배포와 도용을 금지합니다.");
-// }
-// do_not_right_click.eventlistener('click', right_click);
-
-// Home 버튼 누를 경우 맨 위로 천천히 이동
-// const scrollHome = document.querySelector()
-
-
-
-// 이미지를 무단으로 퍼가려고 할 경우
-function windowCopy() {
-  alert("이미지를 복사하실 수 없습니다.");
-};
-window.addEventListener("copy", windowCopy);
-// let img = document.querySelector('#developerPictures');
-// console.log(img);
-// img_hover.addEventListener("click", windowCopy);
+// JS 를 통해 어두운 모드 , 밝은 모드 만드는 TOGGLE 코드 만들기
+// 언어 변경은 아마 주소 옮기는 방식으로 해야할 듯.
+// 사진을 달 사진, 풍경사진 나눠서 버튼 ALL MOON NATURE 세 개로 나눠서 
+// 클릭 할 때 마다 바뀌도록 하는 코드 만들기
+// 오늘, 내일, 모레 이후에도 달력이나 스크롤을 통해 그 이후의 달 위상 체크하는 것 만들기
+// 스크래핑(날씨, 월몰, 월출 정보, 음력 양력 날짜 확인 등)으로 정보 가져오기 공부

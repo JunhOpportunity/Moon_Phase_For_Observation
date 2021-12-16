@@ -7,10 +7,16 @@
 // 오늘, 내일, 모레 이후에도 달력이나 스크롤을 통해 그 이후의 달 위상 체크하는 것 만들기
 // 스크래핑(날씨, 월몰, 월출 정보, 음력 양력 날짜 확인 등)으로 정보 가져오기 공부
 
-const bgc = document.querySelector('body');
+const todayMoonQ = document.querySelector(".todayMoon");
 
-function wheel_scroll() {
-  bgc.querySelector(".info__intro h1") = "a";
+
+function mouseEnter() {
+  todayMoonQ.style.background = "gray";
 };
 
-bgc.addEventListener("wheel", wheel_scroll);
+function mouseLeave() {
+  todayMoonQ.style.background = "white";
+};
+
+todayMoonQ.addEventListener("mouseenter", mouseEnter);
+todayMoonQ.addEventListener("mouseleave", mouseLeave);

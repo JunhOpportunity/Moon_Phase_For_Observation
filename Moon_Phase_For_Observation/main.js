@@ -6,7 +6,7 @@
 // 클릭 할 때 마다 바뀌도록 하는 코드 만들기
 // 오늘, 내일, 모레 이후에도 달력이나 스크롤을 통해 그 이후의 달 위상 체크하는 것 만들기
 // 스크래핑(날씨, 월몰, 월출 정보, 음력 양력 날짜 확인 등)으로 정보 가져오기 공부
-
+const body = document.querySelector("body");
 const todayMoonQ = document.querySelector(".todayMoon");
 
 
@@ -20,3 +20,10 @@ function mouseLeave() {
 
 todayMoonQ.addEventListener("mouseenter", mouseEnter);
 todayMoonQ.addEventListener("mouseleave", mouseLeave);
+
+function copyTry(event) {
+  event.preventDefault();
+  alert("복사 하실 수 없습니다!");
+}
+
+body.addEventListener("copy", copyTry);

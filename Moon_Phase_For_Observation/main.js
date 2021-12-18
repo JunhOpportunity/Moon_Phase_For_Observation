@@ -27,3 +27,30 @@ function copyTry(event) {
 }
 
 body.addEventListener("copy", copyTry);
+
+
+// Today Observation Moon Quiz
+function moonQuiz() {
+  let todayWeather = True; // 임시 저장
+  if (btnclick === yesBtn) { // 만약 Yes 를 누를 경우
+    if(todayWeather === True) { // 관측이 가능 할 경우
+      // 색깔 바뀜 -> alert로 '맞습니다! 오늘은 관측이 가능합니다!' 출력
+      alert('맞습니다! 오늘은 관측이 가능합니다!');
+    }
+    else { // 관측이 불가능 할 경우
+      // 색깔 바뀜 -> alert로 '틀렸습니다! 아쉽지만 오늘은 관측이 불가능 한 날입니다..' 출력
+      alert('틀렸습니다! 아쉽지만 오늘은 관측이 불가능 한 날입니다..');
+    }
+  }
+  else if (btnclick === noBtn) { // 만약 No 를 누를 경우
+    if(todayWeather === True) { // 관측이 가능 할 경우
+      // 색깔 바뀜 -> alert로 '틀렸습니다! 오늘은 관측이 가능합니다!' 출력
+      alert('틀렸습니다! 오늘은 관측이 가능합니다!');
+    }
+    else { // 관측이 불가능 할 경우
+      // 색깔 바뀜 -> alert로 '맞습니다! 아쉽지만 오늘은 관측이 불가능 한 날입니다..' 출력
+      alert('맞습니다! 아쉽지만 오늘은 관측이 불가능 한 날입니다..');
+    };
+};
+
+

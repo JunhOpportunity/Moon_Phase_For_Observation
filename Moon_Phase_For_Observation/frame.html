@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- Navbar -->
     <nav id="navbar" class="section section__container">
         
@@ -209,7 +210,16 @@
     <!-- Arrow up -->
     <!-- 가장 마지막에 구현 -->
     <!-- <button class="arrow-up"><i class="fas fa-arrow-up"></i></button> -->
-
+    <script>
+        $.ajax({
+                method: "GET",
+                url: "http://apis.data.go.kr/B090041/openapi/service/LunPhInfoService",
+                data: { name: "John", location: "Boston" }
+            })
+                .done(function (msg) {
+                    alert("Data Saved: " + msg);
+                });
+    </script>
     <script src="./main.js"></script>
 </body>
 </html>

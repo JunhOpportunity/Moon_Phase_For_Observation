@@ -65,4 +65,12 @@ function moonQuiz() {
   $.getJSON('파일경로', function(data){ // 파일 경로는 도시 ID와 KEY를 가지고 만든 주소
       // data로 할 일 작성
   });
-*/ 
+*/
+
+// api 가이드
+/*
+  1. 요청 : 주소, 전송방식, 보낼 것
+  2. 응답 : 형식(JSON|XML), 받을 것
+
+
+*/
